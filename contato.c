@@ -79,7 +79,7 @@ void excluir() {
             for(j = i; j < total - 1; j++) {
                 agenda[j] = agenda[j + 1];
             }
-            // CORRIGIDO: Chaves ajustadas. O total-- e return devem ficar dentro do IF.
+           
             total--;
             printf("Contato excluido!\n");
             return; 
@@ -88,11 +88,10 @@ void excluir() {
     printf("Contato nao encontrado.\n");
 }
 
-// Requisito Obrigatorio: Edição utilizando Ponteiros
 void atualizarContato() {
     char emailBusca[50];
     int i, achou = 0;
-    struct Contato *ptrContato; // Ponteiro exigido no projeto
+    struct Contato *ptrContato; 
 
     printf("\nDigite o Email do contato que deseja atualizar: ");
     fflush(stdin);
@@ -102,7 +101,7 @@ void atualizarContato() {
         if (strcasecmp(agenda[i].email, emailBusca) == 0) {
             achou = 1;
             
-            // O ponteiro recebe o endereço de memória exato do contato
+            // O ponteiro recebe o endereÃ§o de memÃ³ria exato do contato
             ptrContato = &agenda[i]; 
 
             printf("\n--- Atualizando Contato: %s ---\n", ptrContato->nome);
