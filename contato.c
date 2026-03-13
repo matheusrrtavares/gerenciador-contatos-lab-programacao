@@ -129,8 +129,7 @@ void atualizarContato() {
     }
 }
 
-// Requisito Obrigatorio: Funcao Recursiva
 int contarRecursivo(int indice) {
-    if (indice >= total) return 0; // Caso base
-    return 1 + contarRecursivo(indice + 1); // Chamada recursiva
+    if (indice >= total) return 0; 
+    return 1 + contarRecursivo(indice + 1); 
 }
