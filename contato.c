@@ -101,12 +101,10 @@ void atualizarContato() {
         if (strcasecmp(agenda[i].email, emailBusca) == 0) {
             achou = 1;
             
-            // O ponteiro recebe o endereço de memória exato do contato
             ptrContato = &agenda[i]; 
 
             printf("\n--- Atualizando Contato: %s ---\n", ptrContato->nome);
             
-            // Usando o operador seta (->) para modificar os dados via ponteiro
             printf("Novo Nome: ");
             fflush(stdin);
             scanf("%[^\n]", ptrContato->nome); 
