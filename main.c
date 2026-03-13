@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Métodos do módulo "contatos.c		"
+//MÃ©todos do mÃ³dulo "contatos.c		"
 extern void cadastrar();
 extern void listar();
 extern void buscar();
@@ -16,7 +16,7 @@ int main() {
         printf("\n### AGENDA CONTATOS ###");
         
         printf("\n1 - Cadastrar\n2 - Listar\n3 - Buscar por Nome\n4 - Excluir por Nome");
-        printf("\n5 - Quantidade de Contatos\n6 - Atualizar Contato (Ponteiro)\n0 - Sair\nEscolha: ");
+        printf("\n5 - Quantidade de Contatos (Recursiva)\n6 - Atualizar Contato (Ponteiro)\n0 - Sair\nEscolha: ");
         
         if (scanf("%d", &opcao) != 1) {
             fflush(stdin);
